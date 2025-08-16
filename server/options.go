@@ -39,6 +39,6 @@ func WithName(name string) Option {
 
 func WithMiddleware(m ...Middleware) Option {
 	return func(o *Options) {
-		o.Middlewares = append(o.Middlewares, m)
+		o.Middlewares = append(o.Middlewares, m...)
 	}
 }
